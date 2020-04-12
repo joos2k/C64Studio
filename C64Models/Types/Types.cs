@@ -12,7 +12,8 @@ namespace C64Studio.Types
     UNKNOWN,
     C64,
     VC20,
-    C128
+    C128,
+    PLUS4
   };
 
   public class Machine
@@ -33,6 +34,8 @@ namespace C64Studio.Types
           return C64Studio.Lookup.Machines.VC20;
         case MachineType.C128:
           return C64Studio.Lookup.Machines.C128;
+        case MachineType.PLUS4:
+          return C64Studio.Lookup.Machines.PLUS4;
         default:
           throw new NotImplementedException();
       }

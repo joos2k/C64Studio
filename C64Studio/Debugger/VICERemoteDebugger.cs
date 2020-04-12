@@ -1758,6 +1758,10 @@ namespace C64Studio
       {
         m_ConnectedMachine = MachineType.C128;
       }
+      else if ( filename.StartsWith( "XPLUS4" ) )
+      {
+        m_ConnectedMachine = MachineType.PLUS4;
+      }
 
       if ( fileVersion == null )
       {
